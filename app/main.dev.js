@@ -6,10 +6,10 @@ const ipcMain = require('electron').ipcMain;
 
 var opts = {
     dir: __dirname,
-    icon: path.join(__dirname, 'assets', 'icon.png'),
+    icon: path.join(__dirname, 'assets', 'icon-2.png'),
     tooltip: 'Screenshot & OCR',
     showDockIcon: true,
-    width: 300
+    width: 300,
 };
 
 var mb = menubar(opts);
