@@ -8,14 +8,17 @@ var opts = {
     dir: __dirname,
     icon: path.join(__dirname, 'assets', 'icon-2.png'),
     tooltip: 'Screenshot & OCR',
-    showDockIcon: true,
+    // showDockIcon: true,
     width: 300,
+    resizable: true,
+    movable: false,
+    y: 20,
 };
 
 var mb = menubar(opts);
 
-mb.on('ready', function ready () {
-    mb.on('show', function show () {
+mb.once('ready-to-show', function ready () {
+    mb.on('ready-to-show', function show () {
         mb.window.webContents.send("show");
     });
 

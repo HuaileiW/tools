@@ -64,7 +64,8 @@ export default {
     alias: {
       components: path.resolve(__dirname, './app/components/'),
       containers: path.resolve(__dirname, './app/containers/'),
-      utils: path.resolve(__dirname, './app/utils/')
+      utils: path.resolve(__dirname, './app/utils/'),
+      assets: path.resolve(__dirname, './app/assets/')
     }
   },
 

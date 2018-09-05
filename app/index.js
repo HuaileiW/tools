@@ -1,11 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import 'moment/locale/zh-cn';
 import App from './containers/App';
 import { configureStore, history } from './store/configureStore';
 import './app.global.css';
 
 const store = configureStore();
+
+moment.updateLocale('zh-cn', {
+  week: {
+    dow: 1, // 重置周一作为一周的开始
+  },
+});
 
 render(
   <AppContainer>

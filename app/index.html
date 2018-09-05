@@ -13,6 +13,16 @@
           document.getElementsByTagName('head')[0].appendChild(link);
         }
       }());
+
+      function initDefaultRem() {
+        var docElement = document.documentElement
+        var docWidth = docElement.getBoundingClientRect().width
+        var search = location.search
+        var unitWidth = 3.75;
+        docElement.style.fontSize = docWidth / unitWidth + 'px'
+      }
+
+      initDefaultRem()
     </script>
   </head>
   <body>
