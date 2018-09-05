@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import moment from 'moment';
+import ocrIcon from 'assets/ocrIcon.png'
 import styles from './index.scss';
 
 export default class ScreenShotItem extends PureComponent {
@@ -14,7 +15,8 @@ export default class ScreenShotItem extends PureComponent {
           <div className={styles.created}>{ moment(created).fromNow() }</div>
         </div>
         <div className={styles.process}>
-          OCR
+          <span style={{backgroundImage: `url(${ocrIcon})`}}>
+          </span>
         </div>
       </div>
     )

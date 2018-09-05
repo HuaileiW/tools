@@ -4,16 +4,6 @@
     <meta charset="utf-8">
     <title>Screenshot easy</title>
     <script>
-      (function() {
-        if (!process.env.HOT) {
-          const link = document.createElement('link');
-          link.rel = 'stylesheet';
-          link.href = './dist/style.css';
-          // HACK: Writing the script path should be done with webpack
-          document.getElementsByTagName('head')[0].appendChild(link);
-        }
-      }());
-
       function initDefaultRem() {
         var docElement = document.documentElement
         var docWidth = docElement.getBoundingClientRect().width
@@ -23,6 +13,15 @@
       }
 
       initDefaultRem()
+      (function() {
+        if (!process.env.HOT) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = './dist/style.css';
+          // HACK: Writing the script path should be done with webpack
+          document.getElementsByTagName('head')[0].appendChild(link);
+        }
+      }());
     </script>
   </head>
   <body>

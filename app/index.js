@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import moment from 'moment';
 import 'moment/locale/zh-cn';
 import App from './containers/App';
 import { configureStore, history } from './store/configureStore';

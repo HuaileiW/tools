@@ -11,7 +11,7 @@ export default class Home extends Component<Props> {
 
   render() {
     // const { screenShotList = [] } = this.props;
-    const screenShotList = [{ img: 'https://images.plot.ly/plotly-documentation/thumbnail/box.jpg', title: 'chart2', created: 1536119358765 }, { img: 'https://images.plot.ly/plotly-documentation/thumbnail/box.jpg', title: 'chart', created: 1536119358765 }, { img: 'https://images.plot.ly/plotly-documentation/thumbnail/box.jpg', title: 'chart3', created: 1536119358765 }, ]
+    const screenShotList = [{ img: 'https://images.plot.ly/plotly-documentation/thumbnail/box.jpg', title: 'chart', created: 1536119358765 }, { img: 'https://images.plot.ly/plotly-documentation/thumbnail/box.jpg', title: 'chart', created: 1536119358765 }, { img: 'https://images.plot.ly/plotly-documentation/thumbnail/box.jpg', title: 'chart123', created: 1536119358765 }, ]
 
     return (
       <div className={styles.container} data-tid="container">

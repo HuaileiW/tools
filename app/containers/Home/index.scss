@@ -6,10 +6,12 @@
   background-color: #DEDEDE;
   .recordBtn {
     height: 0.4rem;
+    width: 100%;
     line-height: 0.4rem;
     font-size: 0.15rem;
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     .recordIcon {
       position: relative;
       width: 0.2rem;
@@ -32,16 +34,17 @@
       height: 0.6rem;
       line-height: 0.6rem;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      padding: 0.05rem 0.2rem;
+      padding: 0.1rem 0.2rem;
       overflow: hidden;
       box-sizing: border-box;
 
       .thumnail {
-        width: 0.5rem;
-        height: 0.5rem;
+        width: 0.4rem;
+        height: 0.4rem;
         background-repeat: no-repeat;
         background-position: center center;
-        margin-right: 0.3rem;
+        background-size: contain;
+        margin-right: 0.2rem;
         order: 1;
       }
       .info {
@@ -49,13 +52,13 @@
         order: 2;
         flex: 1.5rem;
         .title {
-          font-size: 0.25rem;
-          height: 0.4rem;
-          line-height: 0.35rem;
+          font-size: 0.2rem;
+          height: 0.3rem;
+          line-height: 0.3rem;
         }
         .created {
-          font-size: 0.15rem;
-          color: rgba(0, 0, 0, 0.3);
+          font-size: 0.12rem;
+          color: rgba(0, 0, 0, 0.5);
           line-height: 0.05rem;
         }
       }
@@ -64,7 +67,16 @@
         order: 3;
         text-align: right;
         font-size: 0.2rem;
-        line-height: 0.5rem;
+        line-height: 0.4rem;
+        span {
+          display: inline-block;
+          width: 0.3rem;
+          height: 0.3rem;
+          vertical-align: middle;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -76,10 +88,3 @@
   }
 }
 
-.container h2 {
-  font-size: 5rem;
-}
-
-.container a {
-  font-size: 1.4rem;
-}
